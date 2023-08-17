@@ -15,7 +15,7 @@ func main() {
 		})
 	})
 
-	err := r.Run(":9808")
+	err := r.Run(":3000")
 	if err != nil {
 		panic(fmt.Sprintf("Failed to start the web server - Error %v", err))
 	}
