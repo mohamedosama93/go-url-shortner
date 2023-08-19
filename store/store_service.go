@@ -42,7 +42,7 @@ func SaveUrl(key string, url string, userId string) {
 	}
 }
 
-func getUrl(key string) string {
+func GetUrl(key string) string {
 	res, err := storeService.client.Get(ctx, key).Result()
 	if err != nil {
 		panic(fmt.Sprintf("Failed to retrieve {%s} with error %v", key, err))
